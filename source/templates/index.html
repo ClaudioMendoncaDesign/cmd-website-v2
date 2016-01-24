@@ -1,0 +1,9 @@
+{% extends '_base.html' %}
+{% block main %}
+<h1>hey</h1>
+{% for image in images %}
+  <div class="gallery__item">
+    <img src="{{image.src}}" alt="{{image.alt}}">
+  </div>
+  {% endfor %}
+{% endblock %}
