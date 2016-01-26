@@ -3,21 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amiri:400italic,400,700,700italic|Fira+Sans:300,300italic,500,500italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>WTF</h1>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <img class="brand__symbol brand--desktop" src="./images/logo-cmd.svg" alt="">
+            </a>
+            <nav class="navigation sidebar__item">
+                <a class="navigation__item button button--naked" href="about.html">About</a>                
+                <a class="navigation__item button button--naked" href="./">Portfolio</a>
+                <a class="navigation__item button button--naked" href="#">Articles</a>
+                <a class="navigation__item button button--naked" href="contact.html">Contact</a>
+                <!-- <a class="navigation__item button button--hire-me" href="#">Hire Me</a> -->
+            </nav>
+            
+            <div class="sidebar__about sidebar__item">
+                <h2>About Me</h2>
+                <p>I am a digital designer with more than 10 years of experience. Since 2010, I focused my efforts on the thriving field of Open Government, where I have the pleasure to work with many of brightest people in the field on the quest to reinvent government.</p>    
+            </div>
+            
+        </aside>
+        
+        <main class="main-content">
+            <header class="header">
+                <span class="menu-trigger"><i class="material-icons">menu</i></span>
+                <a class="brand" href="index.html">
+                    <img class="brand__symbol brand--mobile" src="./images/logo-cmd.svg" alt="">
+                    <h1 class="brand__name">Claudio Mendonça | <em>Design</em></h1>
+                </a>
+            </header>
+            
+
+<section class="gallery">
+    <a href="world-bank.html" class="gallery__item gallery__wb gallery__border-right">
+        <img src="./images/world-bank-logo.png" alt="">
+    </a>
+
+    <a href="govlab.html" class="gallery__item gallery__govlab gallery__border-right gallery__border-bottom">
+        <img src="./images/govlab-logo.png" alt="">
+    </a>
     
-<h1>hey</h1>
+    <a href="open-contracting.html" class="gallery__item gallery__open-contracting gallery__border-bottom-right">
+        <img src="./images/open-contracting-logo.png" alt="">
+    </a>
+    
+    <a href="open-north.html" class="gallery__item gallery__opennorth gallery__border-right-inverted ">
+        <img src="./images/open-north-logo.png" alt="">
+    </a>
+    
+    <a href="idrc.html" class="gallery__item gallery__idrc gallery__border-right-inverted">
+        <img src="./images/idrc-logo.jpg" alt="">
+    </a>
+    
+    <a href="#" class="gallery__item gallery__opencorporates gallery__item--disabled">
+        <img src="/images/opencorporates-logo.png" alt="">
+    </a>
+</section>
+<section class="past-projects">
+    <a href="past-projects.html" class="button">Past Projects</a>
+</section>
 
-  <div class="gallery__item">
-    <img src="image-one.png" alt="Image one alt text">
-  </div>
-  
-  <div class="gallery__item">
-    <img src="image-two.png" alt="Image two alt text">
-  </div>
-  
 
+
+        </main>
+    </div>
 </body>
 </html>
