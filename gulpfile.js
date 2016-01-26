@@ -32,13 +32,15 @@ gulp.task('sass', function() {
 });
 
 // Image Optimizer
+
+// For some weird reason, this creates a folder named "img" in the dist folder. 
 gulp.task('images', function(){
   return gulp.src('source/static/images/**/*.+(png|jpg|jpeg|gif|svg)')
   // Caching images that ran through imagemin
   .pipe(cache(imagemin({
       interlaced: true
     })))
-  .pipe(gulp.dest('dist/images'))
+  .pipe(gulp.dest('public/images'))
 });
 
 // Nunjucks
@@ -61,8 +63,9 @@ gulp.task('nunjucks', function() {
 });
 
 
-gulp.task('watch', ['browserSync', 'sass', 'nunjucks'], function (){
+gulp.task('watch', ['browserSync', 'sass', 'nunjucks', 'images'], function (){
   gulp.watch('source/sass/**/*.scss', ['sass']); 
-  gulp.watch('source/templates/**/*.html', ['nunjucks']); 
+  gulp.watch('source/templates/**/*.html', ['nunjucks']);
+  gulp.watch('source/static/images/**/*', ['images']);
   // Other watchers
 });
