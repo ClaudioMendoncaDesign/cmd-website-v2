@@ -1,0 +1,31 @@
+.sidebar {
+    padding: 35px;
+}
+
+.sidebar {
+    display: none;
+
+    @include breakpoint($desktop) { 
+        display: block;
+        width: 250px;
+        background-color: $gray-03;
+    }
+}
+
+.sidebar__item { margin: 50px 0; }
+
+.sidebar__about {
+    h2 {
+        font-weight: 400;
+        color: $green;
+        margin-bottom: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-weight: 100;
+        color: $gray-60;
+        font-size: 14px;
+    }
+}

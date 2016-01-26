@@ -1,3 +1,43 @@
-h1 {
-    color: blue;
-}
+// Breakpoints
+$mobile: max-width 700px;
+$tablet: max-width 1020px;
+$desktop: 1021px;
+
+// Colors
+$white: rgba(255,255,255,1);
+$transparent: rgba(0,0,0,0);
+$gray-03: rgba(0,0,0,0.02);
+$gray-05: rgba(0,0,0,0.05);
+$gray-10: rgba(0,0,0,0.1);
+$gray-30: rgba(0,0,0,0.3);
+$gray-60: rgba(0,0,0,0.6);
+
+$green: rgba(80,90,40,1);
+
+$sans-serif: 'Fira Sans', sans-serif;
+$serif: 'Amiri', serif;
+
+
+
+@import 'breakpoint';
+@import 'reset';
+
+
+
+// Components
+@import 'utils';
+@import 'base';
+@import 'navigation';
+@import 'brand';
+@import 'button';
+@import 'sidebar';
+@import 'gallery';
+@import 'client-page';
+
+
+
+
+
+
+
+

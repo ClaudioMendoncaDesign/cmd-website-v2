@@ -1,0 +1,15 @@
+@mixin transition {
+    transition: all .4s ease;
+}
+
+.u-disabled {
+    opacity: .3;
+    pointer-events: none;   
+}
+
+.menu-trigger {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    color: $gray-60;
+}

@@ -1,0 +1,29 @@
+.button {
+    padding: 10px 15px;
+    border: 1px solid $gray-10;
+    color: $gray-60;
+    font-size: 1rem;
+    @include transition;
+}
+
+.button:hover {
+    background-color: $gray-03;
+    color: $green;
+    border-color: $gray-30;
+    @include transition;
+}
+
+.button--naked {
+    border-color: transparent;
+}
+
+.button--hire-me {
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.button--hire-me:hover {
+    background-color: $green;
+    color: $white;
+
+}

@@ -1,9 +1,40 @@
 {% extends '_base.html' %}
 {% block main %}
-<h1>hey</h1>
+
+<section class="gallery">
+    <a href="world-bank.html" class="gallery__item gallery__wb gallery__border-right">
+        <img src="./images/world-bank-logo.png" alt="">
+    </a>
+
+    <a href="govlab.html" class="gallery__item gallery__govlab gallery__border-right gallery__border-bottom">
+        <img src="./images/govlab-logo.png" alt="">
+    </a>
+    
+    <a href="open-contracting.html" class="gallery__item gallery__open-contracting gallery__border-bottom-right">
+        <img src="./images/open-contracting-logo.png" alt="">
+    </a>
+    
+    <a href="open-north.html" class="gallery__item gallery__opennorth gallery__border-right-inverted ">
+        <img src="./images/open-north-logo.png" alt="">
+    </a>
+    
+    <a href="idrc.html" class="gallery__item gallery__idrc gallery__border-right-inverted">
+        <img src="./images/idrc-logo.jpg" alt="">
+    </a>
+    
+    <a href="#" class="gallery__item gallery__opencorporates gallery__item--disabled">
+        <img src="/images/opencorporates-logo.png" alt="">
+    </a>
+</section>
+<section class="past-projects">
+    <a href="past-projects.html" class="button">Past Projects</a>
+</section>
+
+{# <ul class="gallery">
 {% for image in images %}
-  <div class="gallery__item">
+  <li class="gallery__item">
     <img src="{{image.src}}" alt="{{image.alt}}">
-  </div>
-  {% endfor %}
+  </li>
+{% endfor %}
+</ul> #}
 {% endblock %}

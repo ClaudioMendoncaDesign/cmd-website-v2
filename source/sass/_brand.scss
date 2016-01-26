@@ -1,0 +1,46 @@
+.brand {
+    display: block;
+    text-align: center;
+}
+
+.brand__symbol {
+    opacity: .5;
+    max-width: 60%;
+    @include breakpoint($mobile) { padding: 20px; }
+    @include breakpoint($desktop) { max-width: 100%; }
+}
+
+.brand__name {
+    font-size: 24px;
+    font-weight: 100;
+    color: $green;
+    font-weight: 100;
+    text-align: center;
+
+    > em {
+        font-family: $serif;
+        font-weight: 200;
+        font-style: italic;
+        color: $gray-60;
+    }
+
+    @include breakpoint($desktop) { 
+        text-align: left;
+        font-size: 40px;
+        padding-left: 30px;
+        padding-top: 5px;
+    }
+}
+
+.brand--desktop {
+    @include breakpoint($desktop) { display: block; }
+}
+
+.brand--mobile {
+    @include breakpoint($desktop) { display: none; }
+}
+
+.menu-trigger {
+
+    @include breakpoint($desktop) { display: none; }
+}
