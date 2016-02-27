@@ -8,24 +8,27 @@
     @include breakpoint($desktop) { 
         display: block;
         width: 250px;
-        background-color: $gray-03;
+        background-color: rgba($black, .03);
     }
 }
 
 .sidebar__item { margin: 50px 0; }
 
 .sidebar__about {
+    // text-align: right;
+    
     h2 {
         font-weight: 400;
         color: $green;
         margin-bottom: 10px;
+
         font-size: 14px;
         text-transform: uppercase;
     }
 
     p {
-        font-weight: 100;
-        color: $gray-60;
+        font-weight: 600;
+        color: rgba($black, .4);
         font-size: 14px;
     }
 }

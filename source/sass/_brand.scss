@@ -18,10 +18,10 @@
     text-align: center;
 
     > em {
-        font-family: $serif;
+        // font-family: $serif;
         font-weight: 200;
         font-style: italic;
-        color: $gray-60;
+        color: rgba($black, .6);
     }
 
     @include breakpoint($desktop) { 

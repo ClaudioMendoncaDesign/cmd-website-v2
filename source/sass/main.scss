@@ -5,16 +5,21 @@ $desktop: 1021px;
 
 // Colors
 $white: rgba(255,255,255,1);
-$transparent: rgba(0,0,0,0);
-$gray-03: rgba(0,0,0,0.02);
-$gray-05: rgba(0,0,0,0.05);
-$gray-10: rgba(0,0,0,0.1);
-$gray-30: rgba(0,0,0,0.3);
-$gray-60: rgba(0,0,0,0.6);
-
+$black: rgba(0,0,0,1);
 $green: rgba(80,90,40,1);
 
+// $transparent: rgba(0,0,0,0);
+// $gray-03: rgba(0,0,0,0.02);
+// $gray-05: rgba(0,0,0,0.05);
+// $gray-10: rgba(0,0,0,0.1);
+// $gray-20: rgba(0,0,0,0.2);
+// $gray-30: rgba(0,0,0,0.3);
+// $gray-60: rgba(0,0,0,0.6);
+
+
+
 $sans-serif: 'Fira Sans', sans-serif;
+$sans-serif: 'DIN Next W02', sans-serif;
 $serif: 'Amiri', serif;
 
 
@@ -33,10 +38,12 @@ $serif: 'Amiri', serif;
 @import 'sidebar';
 @import 'gallery';
 @import 'client-page';
+@import 'slider';
 
 
 
-
+// hides the fonts.com banner
+#mti_wfs_colophon { opacity: 0; }
 
 
 
