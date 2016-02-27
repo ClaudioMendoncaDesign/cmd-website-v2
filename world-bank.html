@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./vendor/slick.css">
     <link href='https://fonts.googleapis.com/css?family=Amiri:400italic,400,700,700italic|Fira+Sans:300,300italic,500,500italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/16e165ab-0075-4cfd-b674-4ed72e814775.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <!-- Test this service for webfonts - DIN - http://www.fonts.com/ -->
 </head>
 <body>
     <div class="wrapper">
@@ -40,45 +43,60 @@
             
 
 <article class="client-page">
-	<section class="client-page__project note">
+	<section class="client-project">
 		<h2>Data Analytics for Procurement</h2>
+		<img class="client-project__logo" src="images/worldbank/data-analytics-for-procurement-logo.png" alt="data Analytics for Procurement Logo">
+		<p>Logo and branding for the Digital Engagement Initiative.</p>
 	</section>
 
-	<section class="client-page__project note">
+	<section class="client-project">
+		<h2>Digital Engagement</h2>
+		<img class="client-project__logo" src="images/worldbank/digital-engagement-logo.png" alt="Digital Engagement Logo">
+		<p>Logo and branding for the Digital Engagement Initiative.</p>
+	</section>
+
+	<section class="client-project">
 		<h2>Procurement Stories</h2>
+		<a href="http://www.transformingprocurement.org" target="_blank">
+			<img class="client-project__screenshot" src="images/worldbank/procurement-stories.png" alt="Procurement Stories Website">
+		</a>
+		<p>Logo and branding for the Digital Engagement Initiative.</p>
 	</section>
 
-	<section class="client-page__project note">
-		<h2>Inforgraphic</h2>
-	</section>
-
-	<section class="client-page__project">
-		<h2>Open Government</h2>
-		<img src="images/img/worldbank/open-government-logo.png" alt="Open Government Logo">
-		<p>Logo and website design for the Open Government Initiative.</p>
-		<a href="http://openinggovernment.com/" target="_blank">
-			<img src="images/img/worldbank/open-gov-now-website.jpg" alt="">
+	<section class="client-project">
+		<h2>Infographic</h2>
+		<a href="images/worldbank/infographic-mobile-survey.pdf" target="_blank">
+			<img class="client-project__screenshot" src="images/worldbank/infographic-preview.jpg" alt="Mobile Survey Infographic">
 		</a>
 	</section>
 
-	<section class="client-page__project">
+	<section class="client-project" id="gei">
 		<h2>GEI Website</h2>
 		<p>Governance for Extractives Industries</p>
 		<a href="http://openinggovernment.com/extractives/" target="_blank">
-			<img class="b-screenshot" src="images/img/worldbank/gei-website.jpg" alt="Governance for Extractives Industries">
+			<img class="client-project__screenshot" src="images/worldbank/gei-website.jpg" alt="Governance for Extractives Industries">
 		</a>
 	</section>
 
-	<section class="client-page__project" id="ict4gov">
+	<section class="client-project" id="open-government">
+		<h2>Open Government</h2>
+		<img class="client-project__logo" src="images/worldbank/open-government-logo.png" alt="Open Government Logo">
+		<p>Logo and website design for the Open Government Initiative.</p>
+		<a href="http://openinggovernment.com/" target="_blank">
+			<img class="client-project__screenshot" src="images/worldbank/open-gov-now-website.jpg" alt="">
+		</a>
+	</section>
+
+	<section class="client-project" id="ict4gov">
 		<h2>ICT4Gov</h2>
 		<p>Logo and Website for the ICT4Gov program at the World Bank - 2011</p>
-		<p class="e-caption">This is a retired project.</p>
+		<p class="client-project__caption">This is a retired project.</p>
 		
-		<img src="images/img/worldbank/ict4gov-logo.jpg" alt="ICT4Gov Logo">
-		<caption>Logo Created for the ICT4Gov Project</caption>
+		<img class="client-project__logo" src="images/worldbank/ict4gov-logo.jpg" alt="ICT4Gov Logo">
+		<p>Logo Created for the ICT4Gov Project</p>
 		
-		<img src="images/img/worldbank/ict4gov-website.jpg" alt="ICT4Gov Website">
-		<caption>Interface design project</caption>
+		<img class="client-project__screenshot" src="images/worldbank/ict4gov-website.jpg" alt="ICT4Gov Website">
+		<p>Interface design project</p>
 	</section>
 
 </article>
@@ -86,5 +104,11 @@
 
         </main>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./vendor/slick.min.js"></script>
+    <script src="./scripts.js"></script>
+
+    
 </body>
 </html>
