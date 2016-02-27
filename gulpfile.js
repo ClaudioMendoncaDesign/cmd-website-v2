@@ -24,23 +24,26 @@ gulp.task('browserSync', function() {
 // Sass
 gulp.task('sass', function() {
   return gulp.src('source/sass/**/*.scss') // Gets all files ending with .scss in app/scss
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('public'))
     .pipe(browserSync.reload({
       stream: true
     }))
 });
 
-// Image Optimizer
+gulp.task('vendor', function(){
+  return gulp.src('source/static/vendor/**/*')
+  .pipe(gulp.dest('public/vendor'))
+});
 
-// For some weird reason, this creates a folder named "img" in the dist folder. 
-gulp.task('images', function(){
-  return gulp.src('source/static/images/**/*.+(png|jpg|jpeg|gif|svg)')
-  // Caching images that ran through imagemin
-  .pipe(cache(imagemin({
-      interlaced: true
-    })))
+gulp.task('image-dev', function(){
+  return gulp.src('source/static/images/**/*')
   .pipe(gulp.dest('public/images'))
+});
+
+gulp.task('js-dev', function(){
+  return gulp.src('source/static/*.js')
+  .pipe(gulp.dest('public'))
 });
 
 // Nunjucks
@@ -63,9 +66,8 @@ gulp.task('nunjucks', function() {
 });
 
 
-gulp.task('watch', ['browserSync', 'sass', 'nunjucks', 'images'], function (){
+gulp.task('watch', ['browserSync', 'sass', 'nunjucks', 'image-dev', 'vendor', 'js-dev'], function (){
   gulp.watch('source/sass/**/*.scss', ['sass']); 
-  gulp.watch('source/templates/**/*.html', ['nunjucks']);
-  gulp.watch('source/static/images/**/*', ['images']);
+  gulp.watch('source/templates/**/*.html', ['nunjucks']); 
   // Other watchers
 });
