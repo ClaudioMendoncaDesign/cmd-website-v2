@@ -1,0 +1,38 @@
+.about-page {
+  margin: 0 auto;
+  padding: 0 65px;
+}
+
+.about-section {
+  padding: 20px 0;
+  max-width: 730px;
+  display: flex;
+
+  &__divider {
+    margin-left: 195px;
+    &:not(:first-of-type) { margin-top: 40px; }
+  }
+
+  &__picture {
+    @extend .u-circle;
+    margin-right: 35px;
+    // box-shadow: 2px 2px 4px rgba($black, .1);
+    width: 160px;
+    height: 160px;
+    // margin-top: 43px;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__name {
+    margin-bottom: 20px;
+  }
+
+  &__job {
+    font-style: italic;
+    color: rgba($black, .3);
+  }
+
+}
