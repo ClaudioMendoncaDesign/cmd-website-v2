@@ -1,7 +1,7 @@
 // Breakpoints
-$mobile: max-width 700px;
-$tablet: max-width 1020px;
-$desktop: 1021px;
+$small-only: (max-width 40em);
+$medium: 40.063em 64em;
+$large: 64.063em 90em;
 
 // Colors
 $white: rgba(255,255,255,1);
@@ -18,7 +18,7 @@ $green: rgba(80,90,40,1);
 
 
 
-$sans-serif: 'Fira Sans', sans-serif;
+// $sans-serif: 'Fira Sans', sans-serif;
 $sans-serif: 'DIN Next W02', sans-serif;
 $serif: 'Amiri', serif;
 

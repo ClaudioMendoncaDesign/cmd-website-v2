@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    @include breakpoint($desktop) { padding: 35px; }
+    @include breakpoint($large) { padding: 35px; }
 }
 
 .main-content {

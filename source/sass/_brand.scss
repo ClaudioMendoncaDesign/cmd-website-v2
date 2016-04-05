@@ -6,8 +6,8 @@
 .brand__symbol {
     opacity: .5;
     max-width: 60%;
-    @include breakpoint($mobile) { padding: 20px; }
-    @include breakpoint($desktop) { max-width: 100%; }
+    @include breakpoint($small-only) { padding: 20px; }
+    @include breakpoint($large) { max-width: 100%; }
 }
 
 .brand__name {
@@ -24,7 +24,7 @@
         color: rgba($black, .6);
     }
 
-    @include breakpoint($desktop) { 
+    @include breakpoint($large) { 
         text-align: left;
         font-size: 40px;
         padding-left: 30px;
@@ -33,14 +33,14 @@
 }
 
 .brand--desktop {
-    @include breakpoint($desktop) { display: block; }
+    @include breakpoint($large) { display: block; }
 }
 
 .brand--mobile {
-    @include breakpoint($desktop) { display: none; }
+    @include breakpoint($large) { display: none; }
 }
 
 .menu-trigger {
 
-    @include breakpoint($desktop) { display: none; }
+    @include breakpoint($large) { display: none; }
 }

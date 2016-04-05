@@ -5,7 +5,7 @@
 .sidebar {
     display: none;
 
-    @include breakpoint($desktop) { 
+    @include breakpoint($large) { 
         display: block;
         width: 250px;
         background-color: rgba($black, .03);

@@ -1,12 +1,19 @@
 .slider {
-    width: 80%;
-    max-width: 800px;
-    padding: 10px 40px;
-    margin: 15px auto;
+    width: 100%;
+
+    @include breakpoint($large) { 
+        width: 80%; 
+        max-width: 800px;
+        padding: 10px 40px;
+        margin: 15px auto;
+    }
 }
 
 .slider__item {
-    margin: 20px 40px;
+    margin: 20px;
+    
+
+    @include breakpoint($large) { margin: 20px 40px; }
 }
 
 .slider--drop-shadow {
@@ -15,7 +22,7 @@
 }
 
 .slider--mobile-app {
-    max-width: 40%;
+    @include breakpoint($large) { max-width: 40%; }
 
     .slider__item {
 
@@ -51,7 +58,6 @@
         outline: 0;
 
         &:before {
-            
             content: 'keyboard_arrow_left'
         }
     }

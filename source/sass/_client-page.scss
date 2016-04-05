@@ -1,8 +1,10 @@
 .client-page {
     h2 {
         text-align: center;
-        font-size: 2rem;
         margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 1.3rem;
+        @include breakpoint($large) { font-size: 2rem; }
     }
 }
 
@@ -11,7 +13,7 @@
     margin: 100px 0;
     
     p {    
-        margin: 0 auto 15px;
+        margin: 15px auto 15px;
         max-width: 700px;
     }
 
@@ -21,27 +23,49 @@
     }
 
     img {
-        // margin: 15px 0;
     }
 }
 
 .client-project__logo {
-    max-width: 40%;
+    max-width: 80%;
+    @include breakpoint($large) { max-width: 60%; }
 }
 
 .client-project__screenshot {
-    max-width: 70%;
+    max-width: 100%;
+    @include breakpoint($large) { max-width: 70%; }
     box-shadow: 2px 2px 10px rgba($black, .1);
 }
 
 .client-project__intro {
-    text-align: left;
     max-width: 700px;
     margin: 0 auto 15px;
+    @include breakpoint($small-only) { 
+        margin: 20px; 
+        text-align: center;
+    }
+    @include breakpoint($large) { text-align: left; }
+
+
 }
 
+.client-project--padded {
+    padding: 80px 30px;
+    @include breakpoint($large) { padding: 100px 60px; }
+}
 
+.client-project__logo--spaced {
+    padding: 80px 0;
+    @include breakpoint($large) { 
+        padding: 60px 0; 
+    }   
+}
 
+.client-project__logo--client-logo {
+    max-width: 40%;
+}
+
+.client-project--noi-neg { background-color: #00698b; }
 
 .note {
     color: red;
