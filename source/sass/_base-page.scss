@@ -1,0 +1,17 @@
+.base-page {
+  margin: 0 auto;
+  padding: 40px 20px;
+  @include breakpoint($large) { padding: 0 65px; }
+
+  .h1 {
+    @include breakpoint($small-only) { text-align: center; }
+  }
+
+  .h2 {
+    font-style: italic;
+    color: rgba($black, .5);
+    margin: 10px 0;
+    @include breakpoint($small-only) { text-align: center; }
+  }
+}
+

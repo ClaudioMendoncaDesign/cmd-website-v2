@@ -66,3 +66,8 @@
   }
 
 }
+
+.about-section__picture--disabled {
+  opacity: 0;
+  @include breakpoint($small-only) { display: none; }
+}

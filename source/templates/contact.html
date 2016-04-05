@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+{% block main %}
+
+<div class="base-page contact-page">
+  <h1 class="h1">Contact</h1>
+  <form action="https://formspree.io/claudio@claudiomendonca.com" method="POST" class="form">
+    <input type="text" placeholder="Name" name="name">
+    <input type="email" placeholder="Email" name="_replyto">
+    <input type="text" placeholder="Subject">
+    <textarea name="" placeholder="Message"></textarea>
+    <input type="submit" value="Send" class="button">
+  </form>
+</div>
+{% endblock %}
+
+<form action="https://formspree.io/your@email.com"
+      method="POST">
+    <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input class="button" type="submit" value="Send">
+</form>

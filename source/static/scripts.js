@@ -6,8 +6,10 @@ $('.js-main-menu').click(function() {
 
     if (sidebar.hasClass('js-active')) {
         sidebar.removeClass('js-active');    
+        $(this).removeClass('js-active');    
     } else {
         sidebar.addClass('js-active');    
+        $(this).addClass('js-active');    
     }
 });
 

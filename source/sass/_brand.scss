@@ -32,12 +32,8 @@
     }
 }
 
-.brand--desktop {
-    display: none;
-    @include breakpoint($large) { display: block; }
-}
-
 .brand--mobile {
+    max-width: 52%;
     @include breakpoint($large) { display: none; }
 }
 

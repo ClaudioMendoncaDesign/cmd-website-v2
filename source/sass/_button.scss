@@ -3,6 +3,10 @@
     border: 1px solid rgba($black, .1);
     color: rgba($black, .6);
     font-size: 1rem;
+    font-family: $sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+
     @include transition;
 }
 
