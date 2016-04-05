@@ -9,12 +9,20 @@ body {
     padding: 0;
 }
 
+@media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 72dpi) { 
+    font-weight: 600;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    font-weight: 100;
+}
+
 .wrapper {
     display: flex;
 }
 
 .header {
-    @include breakpoint($large) { padding: 35px; }
+    @include breakpoint($medium-up) { padding: 35px; }
 }
 
 .main-content {

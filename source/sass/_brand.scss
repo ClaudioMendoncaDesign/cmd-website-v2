@@ -7,7 +7,7 @@
     opacity: .5;
     max-width: 60%;
     @include breakpoint($small-only) { padding: 20px; }
-    @include breakpoint($large) { max-width: 100%; }
+    @include breakpoint($medium-up) { max-width: 100%; }
 }
 
 .brand__name {
@@ -18,10 +18,16 @@
     text-align: center;
 
     > em {
-        // font-family: $serif;
         font-weight: 200;
         font-style: italic;
         color: rgba($black, .6);
+    }
+
+    @include breakpoint($medium) { 
+        text-align: left;
+        font-size: 27px;
+        padding-left: 15px;
+        padding-top: 15px;
     }
 
     @include breakpoint($large) { 
@@ -34,9 +40,11 @@
 
 .brand--mobile {
     max-width: 52%;
-    @include breakpoint($large) { display: none; }
+    display: block;
+    margin: 0 auto;
+    @include breakpoint($medium-up) { display: none; }
 }
 
 .menu-trigger {
-    @include breakpoint($large) { display: none; }
+    @include breakpoint($medium-up) { display: none; }
 }

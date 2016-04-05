@@ -1,7 +1,8 @@
 // Breakpoints
 $small-only: (max-width 40em);
 $medium: 40.063em 64em;
-$large: 64.063em 90em;
+$medium-up: 40.063em;
+$large: 64.063em;
 
 // Colors
 $white: rgba(255,255,255,1);
@@ -18,8 +19,10 @@ $green: rgba(80,90,40,1);
 
 
 
+$sans-serif: 'Roboto', sans-serif;
+// $sans-serif: 'Signika', sans-serif;
 // $sans-serif: 'Fira Sans', sans-serif;
-$sans-serif: 'DIN Next W02', sans-serif;
+// $sans-serif: 'DIN Next W02', sans-serif;
 $serif: 'Amiri', serif;
 
 

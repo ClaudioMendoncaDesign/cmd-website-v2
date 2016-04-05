@@ -3,6 +3,11 @@
 }
 
 .sidebar {
+    position: static;
+    display: block;
+    width: 250px;
+    background-color: rgba($black, .03);
+
     @include breakpoint($small-only) {
         position: fixed;
         left: -1000%;
@@ -11,13 +16,6 @@
         // padding-top: 80px;
         background-color: rgba($white, .98);    
         @include transition;
-    }
-
-    @include breakpoint($large) { 
-        position: static;
-        display: block;
-        width: 250px;
-        background-color: rgba($black, .03);
     }
 }
 
@@ -36,7 +34,7 @@
     }
 
     p {
-        font-weight: 600;
+        font-weight: 300;
         color: rgba($black, .4);
         font-size: 14px;
     }
