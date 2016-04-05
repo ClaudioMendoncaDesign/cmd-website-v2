@@ -3,13 +3,27 @@
 }
 
 .sidebar {
-    display: none;
+    @include breakpoint($small-only) {
+        position: fixed;
+        left: -1000%;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 80px;
+        background-color: rgba($white, .98);    
+        @include transition;
+    }
 
     @include breakpoint($large) { 
+        position: static;
         display: block;
         width: 250px;
         background-color: rgba($black, .03);
     }
+}
+
+.sidebar.js-active {
+    left: 0;
+    @include transition;
 }
 
 .sidebar__item { margin: 50px 0; }

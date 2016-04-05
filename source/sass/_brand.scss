@@ -33,6 +33,7 @@
 }
 
 .brand--desktop {
+    display: none;
     @include breakpoint($large) { display: block; }
 }
 
@@ -41,6 +42,5 @@
 }
 
 .menu-trigger {
-
     @include breakpoint($large) { display: none; }
 }
