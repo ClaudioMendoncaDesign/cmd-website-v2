@@ -6,6 +6,7 @@ var nunjucksRender  = require('gulp-nunjucks-render'),
     imagemin        = require('gulp-imagemin'),
     cache           = require('gulp-cache'),
     del             = require('del');
+    shell           = require('gulp-shell');
 
 // Clean Dist
 gulp.task('clean:dist', function() {
@@ -65,6 +66,10 @@ gulp.task('nunjucks', function() {
     }))
 });
 
+gulp.task('deploy', ['sass', 'nunjucks', 'js-dev', 'image-dev'], shell.task([
+  'git subtree push --prefix public origin gh-pages'
+  ])
+);
 
 gulp.task('watch', ['browserSync', 'sass', 'nunjucks', 'image-dev', 'vendor', 'js-dev'], function (){
   gulp.watch('source/static/**/*.js', ['js-dev']); 
