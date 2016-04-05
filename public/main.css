@@ -114,10 +114,16 @@ body {
   margin: 0;
   padding: 0; }
 
+@media (-webkit-min-device-pixel-ratio: 1), (min-resolution: 72dpi) {
+  font-weight: 600; }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  font-weight: 100; }
+
 .wrapper {
   display: flex; }
 
-@media (min-width: 64.063em) and (max-width: 90em) {
+@media (min-width: 40.063em) {
   .header {
     padding: 35px; } }
 
@@ -126,7 +132,7 @@ body {
   overflow-y: scroll; }
 
 body {
-  font-family: "DIN Next W02", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 200; }
 
@@ -135,7 +141,8 @@ p {
   margin-bottom: 10px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #505a28; }
 
 .h1, .h2, .h3, .h4 {
   font-weight: 100;
@@ -173,7 +180,7 @@ a {
   @media (max-width: 40em) {
     .brand__symbol {
       padding: 20px; } }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 40.063em) {
     .brand__symbol {
       max-width: 100%; } }
 
@@ -187,7 +194,13 @@ a {
     font-weight: 200;
     font-style: italic;
     color: rgba(0, 0, 0, 0.6); }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 40.063em) and (max-width: 64em) {
+    .brand__name {
+      text-align: left;
+      font-size: 27px;
+      padding-left: 15px;
+      padding-top: 15px; } }
+  @media (min-width: 64.063em) {
     .brand__name {
       text-align: left;
       font-size: 40px;
@@ -195,12 +208,14 @@ a {
       padding-top: 5px; } }
 
 .brand--mobile {
-  max-width: 52%; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  max-width: 52%;
+  display: block;
+  margin: 0 auto; }
+  @media (min-width: 40.063em) {
     .brand--mobile {
       display: none; } }
 
-@media (min-width: 64.063em) and (max-width: 90em) {
+@media (min-width: 40.063em) {
   .menu-trigger {
     display: none; } }
 
@@ -209,7 +224,7 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.6);
   font-size: 1rem;
-  font-family: "DIN Next W02", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: transparent;
   cursor: pointer;
   transition: all .4s ease; }
@@ -226,21 +241,19 @@ a {
 .sidebar {
   padding: 35px; }
 
-@media (max-width: 40em) {
-  .sidebar {
-    position: fixed;
-    left: -1000%;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.98);
-    transition: all .4s ease; } }
-
-@media (min-width: 64.063em) and (max-width: 90em) {
-  .sidebar {
-    position: static;
-    display: block;
-    width: 250px;
-    background-color: rgba(0, 0, 0, 0.03); } }
+.sidebar {
+  position: static;
+  display: block;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.03); }
+  @media (max-width: 40em) {
+    .sidebar {
+      position: fixed;
+      left: -1000%;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.98);
+      transition: all .4s ease; } }
 
 .sidebar__item {
   margin: 50px 0; }
@@ -253,7 +266,7 @@ a {
   text-transform: uppercase; }
 
 .sidebar__about p {
-  font-weight: 600;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.4);
   font-size: 14px; }
 
@@ -296,23 +309,29 @@ a {
     @media (max-width: 40em) {
       .gallery__item > img {
         width: 80%; } }
-    @media (min-width: 64.063em) and (max-width: 90em) {
+    @media (min-width: 64.063em) {
       .gallery__item > img {
         width: 90%; } }
   @media (max-width: 40em) {
     .gallery__item {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1); } }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 40.063em) {
     .gallery__item {
-      flex-basis: 30%;
+      flex-basis: 50%;
       padding: 70px 40px;
-      padding-top: 7%;
-      padding-bottom: 7%;
       border-width: 1px;
       border-style: solid;
       border-color: transparent;
       border-bottom-color: rgba(0, 0, 0, 0.1);
-      border-right-color: rgba(0, 0, 0, 0.1); }
+      border-right-color: rgba(0, 0, 0, 0.1); } }
+  @media (min-width: 40.063em) and (max-width: 64em) {
+    .gallery__item:nth-child(even) {
+      border-right-color: transparent; } }
+  .gallery__item img {
+    max-width: 100%; }
+  @media (min-width: 64.063em) {
+    .gallery__item {
+      flex-basis: 30%; }
       .gallery__item:nth-child(4), .gallery__item:nth-child(5), .gallery__item:nth-child(6) {
         border-bottom-color: transparent;
         margin-top: -1px; }
@@ -321,7 +340,7 @@ a {
   .gallery__item img {
     max-width: 100%; }
 
-@media (min-width: 64.063em) and (max-width: 90em) {
+@media (min-width: 64.063em) {
   .gallery__item:hover {
     transition: all .4s ease;
     border: 1px solid #505a28; }
@@ -333,7 +352,7 @@ a {
   .gallery__govlab img {
     width: 60%; } }
 
-@media (min-width: 64.063em) and (max-width: 90em) {
+@media (min-width: 64.063em) {
   .gallery__govlab img {
     width: 70%; } }
 
@@ -341,19 +360,19 @@ a {
   .gallery__open-contracting img {
     width: 90%; } }
 
-@media (min-width: 64.063em) and (max-width: 90em) {
+@media (min-width: 64.063em) {
   .gallery__open-contracting img {
     width: 100%; } }
 
 .gallery__idrc img {
   width: 50%; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .gallery__idrc img {
       width: 60%; } }
 
 .gallery__opencorporates img {
   width: 75%; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .gallery__opencorporates img {
       width: 80%; } }
 
@@ -367,7 +386,7 @@ a {
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 1.3rem; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .client-page h2 {
       font-size: 2rem; } }
 
@@ -387,14 +406,14 @@ a {
 
 .client-project__logo {
   max-width: 80%; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .client-project__logo {
       max-width: 60%; } }
 
 .client-project__screenshot {
   max-width: 100%;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .client-project__screenshot {
       max-width: 70%; } }
 
@@ -405,19 +424,19 @@ a {
     .client-project__intro {
       margin: 20px;
       text-align: center; } }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .client-project__intro {
       text-align: left; } }
 
 .client-project--padded {
   padding: 80px 30px; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .client-project--padded {
       padding: 100px 60px; } }
 
 .client-project__logo--spaced {
   padding: 80px 0; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .client-project__logo--spaced {
       padding: 60px 0; } }
 
@@ -437,7 +456,7 @@ a {
 
 .slider {
   width: 100%; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .slider {
       width: 80%;
       max-width: 800px;
@@ -446,7 +465,7 @@ a {
 
 .slider__item {
   margin: 20px; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .slider__item {
       margin: 20px 40px; } }
 
@@ -454,7 +473,7 @@ a {
   padding: 0;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); }
 
-@media (min-width: 64.063em) and (max-width: 90em) {
+@media (min-width: 64.063em) {
   .slider--mobile-app {
     max-width: 40%; } }
 
@@ -488,7 +507,7 @@ a {
 .base-page {
   margin: 0 auto;
   padding: 40px 20px; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .base-page {
       padding: 0 65px; } }
   @media (max-width: 40em) {
@@ -505,7 +524,7 @@ a {
 .about-page {
   margin: 0 auto;
   padding: 40px 20px; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .about-page {
       padding: 0 65px; } }
 
@@ -515,14 +534,14 @@ a {
     .about-section {
       text-align: center;
       padding: 30px 0; } }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .about-section {
       display: flex;
       padding: 20px 0; } }
   @media (max-width: 40em) {
     .about-section__divider {
       text-align: center; } }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .about-section__divider {
       margin-left: 195px; } }
   .about-section__divider:not(:first-of-type) {
@@ -534,7 +553,7 @@ a {
       .about-section__picture {
         margin-bottom: 30px;
         margin-top: 30px; } }
-    @media (min-width: 64.063em) and (max-width: 90em) {
+    @media (min-width: 64.063em) {
       .about-section__picture {
         margin-right: 35px; } }
   .about-section__content {
@@ -543,7 +562,7 @@ a {
       text-align: left; }
   .about-section__name {
     margin-bottom: 20px; }
-  @media (min-width: 64.063em) and (max-width: 90em) {
+  @media (min-width: 64.063em) {
     .about-section__job:before {
       content: " | ";
       color: rgba(0, 0, 0, 0.8); } }
@@ -580,32 +599,32 @@ a {
   margin-bottom: 10px;
   font-size: 1.1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  font-family: "DIN Next W02", sans-serif;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.7); }
   .form input[type="text"]::-webkit-input-placeholder,
   .form input[type="email"]::-webkit-input-placeholder,
   .form input[type="password"]::-webkit-input-placeholder,
   .form textarea::-webkit-input-placeholder {
-    font-family: "DIN Next W02", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100; }
   .form input[type="text"]:-moz-placeholder,
   .form input[type="email"]:-moz-placeholder,
   .form input[type="password"]:-moz-placeholder,
   .form textarea:-moz-placeholder {
-    font-family: "DIN Next W02", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100; }
   .form input[type="text"]::-moz-placeholder,
   .form input[type="email"]::-moz-placeholder,
   .form input[type="password"]::-moz-placeholder,
   .form textarea::-moz-placeholder {
-    font-family: "DIN Next W02", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100; }
   .form input[type="text"]:-ms-input-placeholder,
   .form input[type="email"]:-ms-input-placeholder,
   .form input[type="password"]:-ms-input-placeholder,
   .form textarea:-ms-input-placeholder {
-    font-family: "DIN Next W02", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 100; }
   .form input[type="text"]:hover,
   .form input[type="email"]:hover,
