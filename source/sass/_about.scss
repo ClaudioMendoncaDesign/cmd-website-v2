@@ -1,38 +1,68 @@
 .about-page {
   margin: 0 auto;
-  padding: 0 65px;
+  padding: 40px 20px;
+  @include breakpoint($large) { padding: 0 65px; }
 }
 
 .about-section {
-  padding: 20px 0;
   max-width: 730px;
-  display: flex;
+  @include breakpoint($small-only) { 
+    text-align: center; 
+    padding: 30px 0;
+  }
+  
+  @include breakpoint($large) { 
+    display: flex; 
+    padding: 20px 0;
+  }
 
   &__divider {
-    margin-left: 195px;
+    @include breakpoint($small-only) { text-align: center; }
+    @include breakpoint($large) { margin-left: 195px; }
     &:not(:first-of-type) { margin-top: 40px; }
   }
 
   &__picture {
     @extend .u-circle;
-    margin-right: 35px;
-    // box-shadow: 2px 2px 4px rgba($black, .1);
+
+    @include breakpoint($small-only) { 
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    
+    @include breakpoint($large) {
+      margin-right: 35px;
+    }
+    
     width: 160px;
     height: 160px;
-    // margin-top: 43px;
   }
 
   &__content {
     flex: 1;
+    p { text-align: left; }
   }
 
   &__name {
     margin-bottom: 20px;
   }
 
+  &__job:before { 
+    @include breakpoint($large) { 
+      content: " | "; 
+      color: rgba($black, .8);
+    }
+  }
+
   &__job {
     font-style: italic;
     color: rgba($black, .3);
+
+    @include breakpoint($small-only) { 
+      display: block;
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
   }
 
 }
