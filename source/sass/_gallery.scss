@@ -16,7 +16,10 @@
     
     > img {
         @include breakpoint($small-only) { width: 80%; }
-        @include breakpoint($large) { width: 90%; }
+        @include breakpoint($large) { 
+            width: 90%; 
+            max-height: 500px;
+        }
         @include transition;
     }
 

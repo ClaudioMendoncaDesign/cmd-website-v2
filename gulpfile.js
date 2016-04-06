@@ -32,6 +32,11 @@ gulp.task('sass', function() {
     }))
 });
 
+gulp.task('domain', function(){
+  return gulp.src('source/CNAME')
+  .pipe(gulp.dest('public'))
+});
+
 gulp.task('vendor', function(){
   return gulp.src('source/static/vendor/**/*')
   .pipe(gulp.dest('public/vendor'))
