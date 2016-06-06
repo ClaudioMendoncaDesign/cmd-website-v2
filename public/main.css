@@ -132,7 +132,7 @@ body {
   overflow-y: scroll; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 16px;
   font-weight: 200; }
 
@@ -185,24 +185,19 @@ a {
       max-width: 100%; } }
 
 .brand__name {
-  font-size: 24px;
-  font-weight: 100;
-  color: #505a28;
   text-align: center; }
-  .brand__name > strong {
-    font-weight: 600; }
+  .brand__name img {
+    max-width: 60%; }
   @media (min-width: 40.063em) and (max-width: 64em) {
     .brand__name {
       text-align: left;
-      font-size: 27px;
-      padding-left: 15px;
-      padding-top: 15px; } }
+      padding-left: 10px; } }
   @media (min-width: 64.063em) {
     .brand__name {
       text-align: left;
-      font-size: 40px;
-      padding-left: 30px;
-      padding-top: 5px; } }
+      padding-left: 25px; }
+      .brand__name img {
+        max-width: 260px; } }
 
 .brand--mobile {
   max-width: 52%;
@@ -221,7 +216,7 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.6);
   font-size: 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   background-color: transparent;
   cursor: pointer;
   transition: all .4s ease; }
@@ -598,32 +593,32 @@ a {
   margin-bottom: 10px;
   font-size: 1.1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  font-family: "Roboto", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.7); }
   .form input[type="text"]::-webkit-input-placeholder,
   .form input[type="email"]::-webkit-input-placeholder,
   .form input[type="password"]::-webkit-input-placeholder,
   .form textarea::-webkit-input-placeholder {
-    font-family: "Roboto", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 100; }
   .form input[type="text"]:-moz-placeholder,
   .form input[type="email"]:-moz-placeholder,
   .form input[type="password"]:-moz-placeholder,
   .form textarea:-moz-placeholder {
-    font-family: "Roboto", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 100; }
   .form input[type="text"]::-moz-placeholder,
   .form input[type="email"]::-moz-placeholder,
   .form input[type="password"]::-moz-placeholder,
   .form textarea::-moz-placeholder {
-    font-family: "Roboto", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 100; }
   .form input[type="text"]:-ms-input-placeholder,
   .form input[type="email"]:-ms-input-placeholder,
   .form input[type="password"]:-ms-input-placeholder,
   .form textarea:-ms-input-placeholder {
-    font-family: "Roboto", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 100; }
   .form input[type="text"]:hover,
   .form input[type="email"]:hover,
