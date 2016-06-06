@@ -14,14 +14,13 @@
     font-size: 24px;
     font-weight: 100;
     color: $green;
-    font-weight: 100;
     text-align: center;
-
-    > em {
-        font-weight: 200;
-        font-style: italic;
-        color: rgba($black, .6);
+    // text-transform: uppercase;
+    
+    > strong {
+        font-weight: 600;
     }
+    
 
     @include breakpoint($medium) { 
         text-align: left;
