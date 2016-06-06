@@ -188,12 +188,9 @@ a {
   font-size: 24px;
   font-weight: 100;
   color: #505a28;
-  font-weight: 100;
   text-align: center; }
-  .brand__name > em {
-    font-weight: 200;
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.6); }
+  .brand__name > strong {
+    font-weight: 600; }
   @media (min-width: 40.063em) and (max-width: 64em) {
     .brand__name {
       text-align: left;
@@ -386,7 +383,8 @@ a {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  line-height: 1.5; }
   @media (min-width: 64.063em) {
     .client-page h2 {
       font-size: 2rem; } }
@@ -401,51 +399,47 @@ a {
       .client-project p {
         margin-left: 10%;
         margin-right: 10%; } }
-  .client-project .client-project__caption {
+  .client-project__caption {
     margin: 0 auto;
     font-style: italic; }
-
-.client-project__logo {
-  max-width: 80%; }
+  .client-project__logo {
+    max-width: 80%; }
+    @media (min-width: 64.063em) {
+      .client-project__logo {
+        max-width: 60%; } }
+  .client-project__screenshot {
+    max-width: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
+    @media (min-width: 64.063em) {
+      .client-project__screenshot {
+        max-width: 70%; } }
+  .client-project__intro {
+    max-width: 700px;
+    margin: 0 auto 15px; }
+    @media (max-width: 40em) {
+      .client-project__intro {
+        margin: 20px; }
+        .client-project__intro > p:only-child {
+          text-align: center; } }
+    @media (min-width: 64.063em) {
+      .client-project__intro {
+        text-align: left; } }
+  .client-project--padded {
+    padding: 80px 30px; }
+    @media (min-width: 64.063em) {
+      .client-project--padded {
+        padding: 100px 60px; } }
+  .client-project__logo--spaced {
+    padding: 80px 0; }
+    @media (min-width: 64.063em) {
+      .client-project__logo--spaced {
+        padding: 60px 0; } }
   @media (min-width: 64.063em) {
-    .client-project__logo {
-      max-width: 60%; } }
-
-.client-project__screenshot {
-  max-width: 100%;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
-  @media (min-width: 64.063em) {
-    .client-project__screenshot {
-      max-width: 70%; } }
-
-.client-project__intro {
-  max-width: 700px;
-  margin: 0 auto 15px; }
-  @media (max-width: 40em) {
-    .client-project__intro {
-      margin: 20px;
-      text-align: center; } }
-  @media (min-width: 64.063em) {
-    .client-project__intro {
-      text-align: left; } }
-
-.client-project--padded {
-  padding: 80px 30px; }
-  @media (min-width: 64.063em) {
-    .client-project--padded {
-      padding: 100px 60px; } }
-
-.client-project__logo--spaced {
-  padding: 80px 0; }
-  @media (min-width: 64.063em) {
-    .client-project__logo--spaced {
-      padding: 60px 0; } }
-
-.client-project__logo--client-logo {
-  max-width: 40%; }
-
-.client-project--noi-neg {
-  background-color: #00698b; }
+    .client-project__logo--client-logo {
+      max-width: 40%;
+      padding-bottom: 40px; } }
+  .client-project--noi-neg {
+    background-color: #00698b; }
 
 .note {
   color: red;
@@ -505,21 +499,21 @@ a {
   .slider .slick-next:after {
     content: 'keyboard_arrow_right'; }
 
-.base-page {
+.base-page, .articles-page {
   margin: 0 auto;
   padding: 40px 20px; }
   @media (min-width: 64.063em) {
-    .base-page {
+    .base-page, .articles-page {
       padding: 0 65px; } }
   @media (max-width: 40em) {
-    .base-page .h1 {
+    .base-page .h1, .articles-page .h1 {
       text-align: center; } }
-  .base-page .h2 {
+  .base-page .h2, .articles-page .h2 {
     font-style: italic;
     color: rgba(0, 0, 0, 0.5);
     margin: 10px 0; }
     @media (max-width: 40em) {
-      .base-page .h2 {
+      .base-page .h2, .articles-page .h2 {
         text-align: center; } }
 
 .about-page {
@@ -582,6 +576,9 @@ a {
   @media (max-width: 40em) {
     .about-section__picture--disabled {
       display: none; } }
+
+.article-list {
+  margin: 30px 0; }
 
 .contact-page .h1 {
   margin-bottom: 30px; }
