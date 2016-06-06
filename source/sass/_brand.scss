@@ -11,29 +11,18 @@
 }
 
 .brand__name {
-    font-size: 24px;
-    font-weight: 100;
-    color: $green;
     text-align: center;
-    // text-transform: uppercase;
-    
-    > strong {
-        font-weight: 600;
-    }
-    
+    img { max-width: 60%; }
 
     @include breakpoint($medium) { 
         text-align: left;
-        font-size: 27px;
-        padding-left: 15px;
-        padding-top: 15px;
+        padding-left: 10px;
     }
 
     @include breakpoint($large) { 
         text-align: left;
-        font-size: 40px;
-        padding-left: 30px;
-        padding-top: 5px;
+        padding-left: 25px;
+        img { max-width: 260px; }
     }
 }
 
