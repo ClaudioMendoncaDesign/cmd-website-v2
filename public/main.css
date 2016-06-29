@@ -436,6 +436,24 @@ a {
   .client-project--noi-neg {
     background-color: #00698b; }
 
+.video-container {
+  max-width: 700px;
+  margin: 0 auto; }
+  .video-container__inner {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.35%;
+    background-color: red;
+    position: relative; }
+    .video-container__inner > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%; }
+
 .note {
   color: red;
   font-weight: bold;
