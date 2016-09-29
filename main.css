@@ -227,7 +227,8 @@ a {
   @media (min-width: 40.063em) {
     .brand {
       max-width: 45%;
-      margin: 20px auto 0; } }
+      margin: 20px auto 0;
+      width: 100%; } }
   .brand__symbol {
     opacity: .5; }
   .brand__name {
