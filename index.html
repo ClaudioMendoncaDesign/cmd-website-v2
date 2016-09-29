@@ -6,42 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="./vendor/slick.css">
     
+
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     
 </head>
 <body>
-    <div class="wrapper">
-        <aside class="sidebar">
-            <a class="brand" href="index.html">
-                <img class="brand__symbol brand--desktop" src="./images/logo-cmd.svg" alt="">
-            </a>
-            <nav class="navigation sidebar__item">
-                <a class="navigation__item button button--naked" href="./about.html">About</a>                
-                <a class="navigation__item button button--naked" href="./">Portfolio</a>
-                <a class="navigation__item button button--naked" href="./articles.html">Articles</a>
-                <a class="navigation__item button button--naked" href="./contact.html">Contact</a>
-                <!-- <a class="navigation__item button button--hire-me" href="#">Hire Me</a> -->
-            </nav>
-            
-            <div class="sidebar__about sidebar__item">
-                <h2>About Me</h2>
-                <p>I am a digital designer with more than 10 years of experience. Since 2010, I focused my efforts on the thriving field of Open Government, where I have the pleasure to work with many of brightest people in the field on the quest to reinvent government.</p>    
-            </div>
-            
-        </aside>
-        
-        <main class="main-content">
-            <header class="header">
-                <span class="menu-trigger js-main-menu"></span>
-                <a class="brand" href="index.html">
-                    <img class="brand__symbol brand--mobile" src="./images/logo-cmd.svg" alt="">
-                    <h1 class="brand__name"><a href="./index.html"><img src="./images/logo-ccm-design.png" alt="CCM Design"></a></h1>
-                </a>
-            </header>
-            
 
+    
+    
+<div class="intro">
+  <a class="brand" href="index.html">
+      <h1>
+        <img class="brand__name" src="./images/logo-ccm-design-full.svg" alt="">
+      </h1>
+  </a>
+  <div class="quotes intro-slider">
+    <blockquote class="quote">
+      <q class="quote__text">Creativity is intelligence having fun</q>
+      <cite>Albert Einstein</cite>
+    </blockquote>
+
+    
+  </div>
+</div>
+<section class="intertitle" id="work">
+  <h2>Work</h2>
+</section>
 <section class="gallery">
     <a href="world-bank.html" class="gallery__item gallery__wb gallery__border-right">
         <img src="./images/world-bank-logo.png" alt="">
@@ -71,10 +63,26 @@
     <a href="more-projects.html" class="button">More Projects</a>
 </section>
 
+<section id="contact" class="intertitle">
+  <h2>Contact</h2>
+</section>
+
+<div class="contact-section">
+  <form action="https://formspree.io/claudio@claudiomendonca.com" method="POST" class="form">
+    <input type="text" placeholder="Name" name="name">
+    <input type="email" placeholder="Email" name="_replyto">
+    <input type="text" name="subject" placeholder="Subject">
+    <textarea name="message" placeholder="Message"></textarea>
+    <input type="submit" value="Send" class="button">
+    <a class="email-address" href="mailto:claudio@ccmdesign.ca">claudio@ccmdesign.ca</a>
+  </form>
+</div>
 
 
-        </main>
-    </div>
+
+
+
+    
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./vendor/slick.min.js"></script>

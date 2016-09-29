@@ -6,41 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="./vendor/slick.css">
     
+
     <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     
 </head>
 <body>
-    <div class="wrapper">
-        <aside class="sidebar">
-            <a class="brand" href="index.html">
-                <img class="brand__symbol brand--desktop" src="./images/logo-cmd.svg" alt="">
-            </a>
-            <nav class="navigation sidebar__item">
-                <a class="navigation__item button button--naked" href="./about.html">About</a>                
-                <a class="navigation__item button button--naked" href="./">Portfolio</a>
-                <a class="navigation__item button button--naked" href="./articles.html">Articles</a>
-                <a class="navigation__item button button--naked" href="./contact.html">Contact</a>
-                <!-- <a class="navigation__item button button--hire-me" href="#">Hire Me</a> -->
-            </nav>
-            
-            <div class="sidebar__about sidebar__item">
-                <h2>About Me</h2>
-                <p>I am a digital designer with more than 10 years of experience. Since 2010, I focused my efforts on the thriving field of Open Government, where I have the pleasure to work with many of brightest people in the field on the quest to reinvent government.</p>    
-            </div>
-            
-        </aside>
-        
-        <main class="main-content">
-            <header class="header">
-                <span class="menu-trigger js-main-menu"></span>
-                <a class="brand" href="index.html">
-                    <img class="brand__symbol brand--mobile" src="./images/logo-cmd.svg" alt="">
-                    <h1 class="brand__name"><a href="./index.html"><img src="./images/logo-ccm-design.png" alt="CCM Design"></a></h1>
-                </a>
-            </header>
-            
+
+<div class="top-bar">
+  <a class="brand" href="index.html">
+    <h1>
+      <img class="brand__symbol" src="./images/logo-cmd.svg" alt=""><img class="brand__name" src="./images/logo-ccm-design.svg" alt="">
+    </h1>
+  </a>
+  <nav class="nav">
+    <a href="index.html#work" class="nav__item button">Work</a>
+    <a href="articles.html" class="nav__item button">Articles</a>
+    <a href="index.html#contact" class="nav__item button">Contact</a>
+  </nav>
+</div>
+
+    
+    
 
 <div class="about-page">
   <h1 class="h1 about-section__divider">About Me</h1>
@@ -102,8 +90,7 @@
   </div> -->
 </div>
 
-        </main>
-    </div>
+    
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./vendor/slick.min.js"></script>
